@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-font: "Jost", sans-serif;
+    --theme-bg-color: #171717;
+}
+
+body{
+    font-family: var(--primary-font);
+    background-color: var(--theme-bg-color);
+    color: #fff;
+}
+
+/* ---------------------------------- */
+
+ul li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.8rem 3.4rem;
+}
+.navbar i{
+    display: none;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+}
+.navbar ul li a{
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 12px 12px;
+}
+
+/* ---------------------------------- */
+
+.heading-style1 h1{
+    font-size: 2.4rem;
+    margin: 1rem 2.4rem;
+}
+
+
+.course-container{
+    margin: 2rem 4.8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.course-box {
+    width: 28vw;
+    border: 1px solid #494747;
+    border-radius: 8px;
+}
+.course-box img{
+    width: 100%;
+    border-radius: 6px;
+}
+.course-box h2{
+    padding: 10px;
+}
+.course-dc{
+    padding: .8rem 1.2rem;
+}
+.course-dc ul {
+    border-bottom: 2px dotted #817979;
+    margin-bottom: 17px;
+    padding-bottom: 10px;
+}
+.course-dc ul li{
+    margin: 6px 0;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #817979;
+    font-weight: 600;
+    margin: 12.4px 0;
+}
+.course-dc ul li i{
+    margin-right: 4px;
+}
+.course-dc h4{
+    font-size: 22px;
+}
+
+.course-enroll-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.course-enroll-button button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    height: 2.8rem;
+    border-radius: 4px;
+    border-radius: 4px;
+    border: none;
+    margin-top: 16px;
+    background-color: #34333395;
+    color: #ccc;
+    font-size: 16px;
+    font-weight: 600;
+}
+.course-enroll-button button i{
+    margin-left: 4px;
+    font-size: 18px;
+}
