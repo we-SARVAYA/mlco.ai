@@ -140,10 +140,6 @@ a{
 .down-scroll .auto-scroll-content {
   top: 0; /* Start from the top */
 }
-  
-.hero-section-bottom-img img{
-
-}
 
 /* ---------------------------------- */
 
@@ -536,6 +532,7 @@ a{
 .community-left p{
     font-size: 18px;
     margin: 16px 12px;
+    color: #bbbaba;
 }
 .community-left button{
     padding: 10px 12px;
@@ -819,5 +816,325 @@ footer .footer{
     }
     .faq-container {
         margin-left: -2rem;
+    }
+}
+
+@media(max-width:600px){
+    .navbar {
+        padding: 1.2rem 1.4rem;
+        width: 100vw;
+    }
+    .navbar ul {
+        display: none;
+    }
+    
+    .navbar ul li a {
+        font-size: 1.2rem;
+        color: #fff;
+        padding: 12px 12px;
+    }
+    .navbar .bx-menu{
+        display: block;
+        font-size: 1.6rem;
+    }
+
+    
+    /* --------------- */
+    .heading-s1{
+        font-size: 4.2vw;
+        text-align: center;
+    }
+    .heading-s1 span{
+        background-color: #FFBD59;
+        color: #171717;
+        padding: 4px;
+    }
+    /* --------------- */
+    .hero-section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero-svg{
+        transform: scale(1);
+        top: 2rem;
+    }
+    .hero-left{
+        margin-top: 6rem;
+        margin-bottom: 3rem;
+    }
+    .hero-left h1{
+        font-size: 12vw;
+        line-height: 44px;
+    }
+    .hero-left h4{
+        width: 15rem;
+        margin-bottom: 1rem;
+        padding: 12px;
+        border: 1px dotted #5c5b5b;
+    }
+    .hero-left button{
+        margin-top: 2rem;
+        border: none;
+        width: 12rem;
+        height: 2.6rem;
+        border-radius: 1px;
+        font-size: 1rem;
+    }
+    .hero-left button i{
+        margin-left: 4px;
+        font-size: 1.1rem;
+    }
+    
+      
+    .scroll-wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 96%;
+      height: 100vh;
+    }
+    
+    .auto-scroll-container {
+      width: 48%; /* Adjust width as needed */
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .auto-scroll-content {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+    }
+    
+    .auto-scroll-item {
+      height: 20rem;
+      width: 24rem;
+      padding: 20px;
+      border-bottom: 1px solid #ddd;
+      background-color: #1e1e1e;
+    }
+    
+    .up-scroll .auto-scroll-content {
+      bottom: 0; /* Start from the bottom */
+    }
+    
+    .down-scroll .auto-scroll-content {
+      top: 0; /* Start from the top */
+    }
+  
+    /* --------------- */
+
+    .about-section{
+        height: auto;
+        flex-direction: column;
+        margin: 2rem 0;
+    }
+    .about-left h1 br{
+        display: none;
+    }
+    .about-left h1{
+        text-align: center;
+        font-size: 7vw;
+        margin-top: 2rem;
+    }
+    .about-right ul li{
+        font-size: 4vw;
+        margin: 18px 0;
+    }
+    .about-right ul li i{
+        color: rgb(145, 151, 237);
+    }
+    .about-section svg{
+        position: absolute;
+        right: -6rem;
+        z-index: -2;
+        transform: rotate(180deg);
+    }
+
+    /* --------------- */
+    .course-container {
+        margin: 2rem 4.8rem;
+        flex-direction: column;
+    }
+    .course-box {
+        width: 90vw;
+        margin: 1rem;
+    }
+    
+    
+    
+    /* --------------- */ 
+    .mentors-section{
+        height: auto;
+        margin-top: -4rem;
+    }
+    .mentor-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin: 1.4rem;
+        margin-top: 4rem;
+    }
+
+    .mentor-desc h1{
+        font-size: 10vw;
+     }
+     .mentor-desc p{
+        font-size: 4.6vw;
+        margin: 10px 0;
+     }
+     .mentor-desc p br{
+        display: none;
+     }
+     .mentor-desc h4{
+        font-size: 1.4rem;
+     }
+     .mentor-desc button{
+         width: 90%;
+         margin-top: 12px;
+         height: 2.4rem;
+     }
+     .mentor-pfp img{
+         height: 85vw;
+         margin-left: 0rem;
+         margin: 2rem;
+     }
+     
+     .mentor-exp{
+         flex-direction: row;
+         width: 100%;
+     }
+     .mentor-exp div h3{
+         font-size: 2rem;
+         margin-bottom: 12px;
+     }
+     .mentor-exp div p{
+         color: #8c8c8c;
+     }
+     .mentor-exp div:nth-child(2){
+         border-top: none;
+         border-bottom: none;
+         border-left: 1px solid #545454;
+         border-right: 1px solid #545454;
+     }
+     
+    /* --------------- */
+    .certificate-section {
+        margin-bottom: 4rem;
+        padding: 3rem;
+    }
+    
+    .certificate-section h1 {
+        font-size: 5.2vw;
+        margin-bottom: 18px;
+    }
+    .certificate-section img{
+        width: 80vw;
+    }
+    .testimonials-section h1 {
+        font-size: 8.6vw;
+        margin-bottom: 3rem;
+    }
+    
+    /* --------------- */
+     
+
+    /* --------------- */
+    .testimonial-box {
+        display: flex;
+        flex-direction: column;
+    }
+    .testimonial-box img{
+        height: 80vw;
+    }
+
+    /* --------------- */
+    .community-box{
+        height: 220px;
+        padding: 0 1rem;
+    }
+    .community-left h1{
+        font-size: 20px;
+    }
+    .community-left p{
+        font-size: 16px;
+        margin: 3px 4px;
+    }
+    .community-left button{
+        margin-top: 38px;
+        padding: 8px 10px;
+        width: 12rem;
+    }
+
+    /* --------------- */
+    footer {
+        margin: 2rem 0;
+    }
+    
+    footer .footer {
+        background-color: var(--theme-bg-color);
+        /* height: auto; */
+        width: 90vw;
+        border: #454444 2px solid;
+        padding: 1rem;
+    }
+    .footer-logo img {
+        height: 6rem;
+        margin-top: 2rem;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        margin: 2rem 1.4rem;
+    } 
+    .footer-container ul {
+        margin: .6rem 1rem;
+    }
+    
+    .footer-container h3 {
+        font-size: 1.6rem;
+    }
+    
+    .footer-links li a {
+        font-size: 1rem;
+        margin: 16px 0;
+    }
+    
+    .footer-c p {
+        margin-left: 0rem;
+        font-size: 14px;
+        color: #979797;
+    }
+    
+}
+@media only screen and (max-width: 500px) {
+    
+    .faq-section-container {
+        grid-template-columns: 1fr;
+        gap: 4.8rem;
+    }
+
+    .form-container {
+        padding: 3.6rem;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+    .faq-section {
+        transform: scale(.50);
+        margin-bottom: 0rem;
+        /* margin-top: -6rem; */
+        margin-top: 0rem;
+        margin-left: -5rem;
+        margin-bottom: -28rem;
+        margin-top: -26rem;
+    }
+    .faq-section h1 {
+        font-size: 4.4rem;
+        margin-bottom: 4.8rem;
+        margin-right: -10rem;
     }
 }
