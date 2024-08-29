@@ -803,3 +803,21 @@ footer .footer{
     color: #979797;
 }
 
+
+
+
+/* ---------------------- */
+
+@media(max-width:1300px){  
+    .faq-section {
+        transform: scale(.70);
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    .faq {
+        width: 45rem;
+    }
+    .faq-container {
+        margin-left: -2rem;
+    }
+}
