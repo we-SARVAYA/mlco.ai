@@ -1,0 +1,54 @@
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    min-height: 100%;
+  }
+  
+  h1 {
+    position: sticky;
+    top: 2rem;
+    margin: 0;
+  }
+  
+  .text {
+    padding: 2rem;
+  }
+  
+  .side {
+    position: relative;
+    background: black;
+    color: white;
+  }
+  
+  
+  .scroller {
+    // position: fixed;
+    // width: 50%;
+    padding: 2rem;
+    background: black;
+    // border: 2px solid yellow; // Debug
+  }
+  
+  .scroller-copy {
+    position: relative;
+    width: 100%;
+    // border: 2px solid blue; // Debug
+  }
+  
+  // Dummy articles in the scroller
+  
+  article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 16/9;
+    margin-bottom: 2rem;
+    background-color: #333;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  

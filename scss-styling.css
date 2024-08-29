@@ -1,0 +1,44 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
+  min-height: 100%;
+}
+
+h1 {
+  position: sticky;
+  top: 2rem;
+  margin: 0;
+}
+
+.text {
+  padding: 2rem;
+}
+
+.side {
+  position: relative;
+  background: black;
+  color: white;
+}
+
+.scroller {
+  padding: 2rem;
+  background: black;
+}
+
+.scroller-copy {
+  position: relative;
+  width: 100%;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 16/9;
+  margin-bottom: 2rem;
+  background-color: #333;
+}
+article:last-child {
+  margin-bottom: 0;
+}/*# sourceMappingURL=scss-styling.css.map */
