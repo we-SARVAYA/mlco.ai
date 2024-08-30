@@ -82,7 +82,7 @@ a{
     line-height: 80px;
 }
 .hero-left h4{
-    width: 15rem;
+    width: 18rem;
     margin-bottom: 1rem;
     padding: 12px;
     border: 1px dotted #5c5b5b;
@@ -423,6 +423,7 @@ a{
   .ag-courses-item_title {
     font-size: 24px;
   }
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -464,9 +465,10 @@ a{
 }
 .certificate-section h1{
     font-size: 2.8vw;
-    margin-bottom: -4px;
+    margin-bottom: 4px;
 }
 .certificate-section p{
+    text-align: center;
     font-size: 1.8rem;
     margin-bottom: 40px;
     color: #918e8e;
@@ -474,11 +476,6 @@ a{
 
 /* ----------------------------------- */
 
-.results_wrapper{
-    transform: scale(.8);
-    margin-top: -5rem;
-    margin-bottom: -10rem;
-}
 
 .testimonials-section{
     display: flex;
@@ -491,6 +488,11 @@ a{
     margin-bottom: 3rem;
 }
 
+.results_wrapper{
+    transform: scale(.8);
+    margin-top: -5rem;
+    margin-bottom: -10rem;
+}
 .results_img {
     background-color: var(--theme-color);
 }
@@ -642,7 +644,7 @@ textarea {
 
 .faq-section h1 {
     text-align: center;
-    font-size: 4.4rem;
+    font-size: 3.8rem;
     margin-bottom: -1rem;
     margin-bottom: 4.8rem;
     font-weight: 700;
@@ -661,7 +663,7 @@ textarea {
     margin: 0 auto;
     display: grid;
     grid-template-columns: .8fr 1fr;
-    gap: 5.6rem;
+    gap: 2.6rem;
 }
 
 .form-container {
@@ -876,7 +878,7 @@ footer .footer{
 
 /* ---------------------- */
 
-@media(max-width:1300px){  
+@media(max-width:1410px){  
     .faq-section {
         transform: scale(.70);
         margin-bottom: 1rem;
@@ -887,6 +889,19 @@ footer .footer{
     }
     .faq-container {
         margin-left: -2rem;
+    }
+    .certificate-section {
+        margin-top: 6rem;
+    }
+    .ag-courses-item_title {
+        min-height: 87px;
+        margin: 0 0 25px;
+        overflow: hidden;
+        font-weight: bold;
+        font-size: 22px!important;
+        color: #FFF;
+        z-index: 2;
+        position: relative;
     }
 }
 
@@ -936,10 +951,10 @@ footer .footer{
     }
     .hero-left h1{
         font-size: 12vw;
-        line-height: 44px;
+        line-height: 60px;
     }
     .hero-left h4{
-        width: 15rem;
+        width: 18rem;
         margin-bottom: 1rem;
         padding: 12px;
         border: 1px dotted #5c5b5b;
@@ -1012,9 +1027,6 @@ footer .footer{
         font-size: 4vw;
         margin: 18px 0;
     }
-    .about-right ul li i{
-        color: rgb(145, 151, 237);
-    }
     .about-section svg{
         position: absolute;
         right: -6rem;
@@ -1067,7 +1079,7 @@ footer .footer{
          height: 2.4rem;
      }
      .mentor-pfp img{
-         height: 85vw;
+         height: 75vw;
          margin-left: 0rem;
          margin: 2rem;
      }
@@ -1107,6 +1119,11 @@ footer .footer{
         font-size: 8.6vw;
         margin-bottom: 3rem;
     }
+    .certificate-section p{
+        text-align: center;
+        font-size: 1rem;
+    }
+    
     
     /* --------------- */
      
@@ -1116,8 +1133,21 @@ footer .footer{
         display: flex;
         flex-direction: column;
     }
-    .testimonial-box img{
-        height: 80vw;
+        
+    .results_wrapper{
+        transform: scale(.8);
+        margin-top: -18rem;
+        margin-bottom: -18rem;
+    }
+    .results_img {
+        background-color: var(--theme-color);
+    }
+    .results_card {
+        background-color: #ffbd5919;
+    }
+    .results_card.secondary {
+        border: 2px solid var(--theme-color);
+        align-items: center;
     }
 
     /* --------------- */
