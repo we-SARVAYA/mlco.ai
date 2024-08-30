@@ -1475,7 +1475,7 @@ footer .footer{
     /* --------------- */ 
     .mentors-section{
         height: auto;
-        margin-top: -4rem;
+        margin-top: 0rem;
     }
     .mentor-container {
         display: flex;
@@ -1487,7 +1487,7 @@ footer .footer{
     }
 
     .mentor-desc h1{
-        font-size: 10vw;
+        font-size: 9vw;
      }
      .mentor-desc p{
         font-size: 4.6vw;
