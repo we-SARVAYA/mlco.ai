@@ -64,6 +64,29 @@ body{
   background-color: #E1A74F;
 }
 
+
+.heading-s2{
+    font-size: 2vw;
+    padding: 2.8rem 3.8rem;
+    border-bottom: 1px solid #949494;
+    color: #FFF4E3;
+}
+
+.heading-s2 h1 span{
+    
+}
+
+.heading-s2 div{
+    display: flex;
+    flex-direction: row;
+}
+.heading-s2 div h6{
+    font-size: 18px;
+    margin: 10px 20px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
 /* ---------------------------------- */
 
 ul li{
@@ -111,7 +134,6 @@ a{
     color: var(--theme-color);
 }
 .hover-underline-animation {
-  display: inline-block;
   position: relative;
 }
 .hover-underline-animation:after {
@@ -613,15 +635,21 @@ color: #ee5535;
 }
 
 .modal-content button{
+  font-weight: 600!important;
   border: 1px solid #6e6e6e;
   transition: all ease-in-out .4s;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  background-color: #FFF4E3;
 }
 
 .modal-content button:hover{
+    background-color: #121212;
+    color: #fff;
+}
+.modal-content button:active{
     background-color: #121212;
     color: #fff;
 }
@@ -795,16 +823,19 @@ color: #ee5535;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     color: #000;
-    font-weight: 900;
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 22px;
     border-radius: 8px;
     width: 16rem;
     height: 3.6rem;
-    background-color: #fff;
+    background-color: #FFF4E3;
     border: 1px solid #fff;
     transition: all ease-in-out .2s;
+}
+.view-all-button a i{
+    font-size: 1.6rem;
 }
 .view-all-button a:hover{
     background-color: #000;
@@ -984,13 +1015,13 @@ color: #ee5535;
     width: 16rem;
     background-color: transparent;
     color: #000;
-    font-weight: 800;
+    font-weight: 600;
     border: #fff 1px solid;
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: #FFF4E3;
     transition: all ease-in-out .2s;
 }
 .community-left button:hover{
@@ -1180,7 +1211,6 @@ textarea {
     transition: height .3s;
 }
 
-
 .faq.active .faq--content {
     height: 15.0rem;
     width: 100%;
@@ -1190,7 +1220,7 @@ textarea {
     transition: height .3s;
 }
 .faq.active .faq--content {
-    height: 6.0rem;
+    height: 8.0rem;
     margin-left: 12px;
     font-size: 1.6rem;
     color: #b0aeae;
@@ -1199,6 +1229,7 @@ textarea {
     text-align: center;
     font-size: 1.8rem;
     margin-top: 3rem;
+    line-height: 50px;
 }
 .bottom-of-faq a{
     color: var(--theme-color);
@@ -1222,7 +1253,6 @@ footer {
 }
 footer .footer{
     background-color: var(--theme-bg-color);
-    /* height: auto; */
     width: 90vw;
     border: #454444 2px solid;
     padding: 1rem;
@@ -1255,7 +1285,6 @@ footer .footer{
 .footer-links li a{
     text-decoration: none;
     color: #adadad;
-    display: block;
     font-weight: 400;
     font-size: 1.2rem;
     margin: 12px 0;
@@ -1280,7 +1309,7 @@ footer .footer{
 
 /* ---------------------- */
 
-@media(max-width:1410px){  
+@media(max-width:1610px){  
     .faq-section {
         transform: scale(.70);
         margin-bottom: 1rem;
@@ -1308,6 +1337,13 @@ footer .footer{
 }
 
 @media(max-width:600px){
+    .ag-courses_box div:nth-child(4){
+        display: none;
+    }
+    .ag-courses_box div:nth-child(5){
+        display: none;
+    }
+    /* ------------------- */
     .circle{
         display: none;
     }
@@ -1489,7 +1525,6 @@ footer .footer{
         align-items: center;
         justify-content: center;
         color: #000;
-        font-weight: 900;
         font-size: 18px;
         border-radius: 8px;
         width: 16rem;
@@ -1704,5 +1739,4 @@ footer .footer{
     .bottom-of-faq a{
         line-height: 48px;
     }
-
 }
