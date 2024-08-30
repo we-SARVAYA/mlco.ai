@@ -31,7 +31,9 @@ copyText.querySelector("button").addEventListener("click", function () {
 	window.getSelection().removeAllRanges();
 	setTimeout(function () {
 		copyText.classList.remove("active");
-	}, 2500);
+	}, 500);
+
+    
 });
 
 let copyText2 = document.querySelector(".copy-text-2");
@@ -43,7 +45,7 @@ copyText2.querySelector("button").addEventListener("click", function () {
 	window.getSelection().removeAllRanges();
 	setTimeout(function () {
 		copyText2.classList.remove("active");
-	}, 2500);
+	}, 500);
 });
 
 
@@ -146,4 +148,13 @@ document.getElementById('closeModal-2').addEventListener('click', function() {
     document.getElementById('modal-2').style.display = 'none';
 });
 
+
+
+var courseBox = document.querySelector('.course-box');
+var shortDc = document.querySelector('.short-dc');
+var longDc = document.querySelector('.long-dc');
+
+courseBox.addEventListener('click',()=>{
+    
+})
 

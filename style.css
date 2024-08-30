@@ -298,11 +298,25 @@ a{
     background-color: #121212;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    transition: all ease-in-out .4s;
 }
+
+
+.short-dc,.course-box img{
+    /* display: none; */
+}
+
+.long-dc{
+    display: none;
+}
+
+
 /* .course-box:hover{
     transition: all ease-in-out .4s;
     background-color: rgba(25, 25, 25, 0.851)
     
 } */
+.course-d-list ul{
+    list-style: disc;
+}
 .course-box img{
     width: 100%;
     border-radius: 6px;
@@ -497,7 +511,9 @@ color: #ee5535;
     pointer-events: none;
 }
 .copy-text input.text {
+    font-family: "Jost", sans-serif!important;
 	padding: 10px;
+    font-weight: 700;
 	font-size: 12px;
 	color: #000;
 	border: none;
@@ -515,9 +531,6 @@ color: #ee5535;
     color: #000;
 }
 
-.copy-text button:active {
-	background: var(--theme-color);
-}
 .copy-text button:before {
 	content: "Copied";
 	position: absolute;
@@ -527,6 +540,7 @@ color: #ee5535;
 	padding: 8px 10px;
 	border-radius: 20px;
 	font-size: 15px;
+    color: #000;
 	display: none;
 }
 .copy-text button:after {
@@ -538,6 +552,7 @@ color: #ee5535;
 	height: 10px;
 	background: var(--theme-color);
 	transform: rotate(45deg);
+    color: #000;
 	display: none;
 }
 .copy-text.active button:before,
@@ -643,13 +658,10 @@ color: #ee5535;
   align-items: center;
   justify-content: space-between;
   background-color: #FFF4E3;
+  transition:0s;
 }
 
 .modal-content button:hover{
-    background-color: #121212;
-    color: #fff;
-}
-.modal-content button:active{
     background-color: #121212;
     color: #fff;
 }
