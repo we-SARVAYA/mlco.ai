@@ -3482,6 +3482,7 @@ textarea.w-input, textarea.w-select {
   color: var(--crimson);
   width: 31.9922px;
   height: 24px;
+  font-family: "Jost", sans-serif;
 }
 
 .star {

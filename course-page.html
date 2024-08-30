@@ -24,26 +24,31 @@
     </style>
 </head>
 <body>
+    <div class="main-cursor">
+        <div class="circle"></div>
+    </div>
     <!-- --------Header--------- -->
-    <div class="navbar">
+    <div class="navbar" data-aos="fade-down">
         <div>
-            <h2>Mlco.ai</h2>
+            <a href="#"><img class="nav-logo" src="./images/logo-without-bg.png" alt=""></a>
         </div>
         <div class="nav-links">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Cources</a></li>
-                <li><a href="#">Notes</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a class="hover-underline-animation" href="./index.html">Home</a></li>
+                <li><a class="hover-underline-animation" href="./course-page.html">Course</a></li>
+                <li><a class="hover-underline-animation" href="./notes-page.html">Notes</a></li>
+                <li><a class="hover-underline-animation" href="./blogs/all-blogs.html">Blogs</a></li>
+                <li><a class="hover-underline-animation" href="#">Contact</a></li>
             </ul>
         </div>
         <i class='bx bx-menu'></i>
     </div>
+
     <!-- -------Course Section------- -->
 
     <div class="course-section">
         <div class="heading-s1" data-aos="fade-up" style="padding-top: 10rem;" >
-            <h1>Explore Our Courses.</h1>
+            <h1>Our Courses<span style="color: #FFBD59; background-color: #171717;">.</span></h1>
         </div>
         <div class="course-container">
             <div class="course-box"
@@ -60,26 +65,30 @@
                         <li><i class='bx bx-timer' ></i> 3-4 Hours</li>
                         <li><i class='bx bx-certification' ></i> Certificatin of Complition</li>
                         <li><i class='bx bx-globe' ></i> Hinglish</li>
-                        <li><i class='bx bxs-battery-full' ></i> Beginners </li>
+                        <li><i class='bx bx-child'></i> Beginners </li>
                     </ul>
-                    <div>
-                        <h4>499Rs</h4>
-                        <i></i>
+                    <div style="display: flex;flex-direction: row;align-items: center; justify-content: space-between;">
+                        <h4>₹499</h4>
+                        <i style="font-size: 1.2rem;" class='bx bx-share-alt' ></i>
                     </div>
-                    <div class="course-enroll-button">
-                        <button id="openModal">Enroll Now <i class='bx bx-right-arrow-alt' ></i></button>
+                    <div>
+                        <button class="course-enroll-button" id="openModal">Enroll Now <i class='bx bx-right-arrow-alt' ></i></button>
 
                         <div id="modal" class="modal">
                             <div class="modal-content">
                                 <span id="closeModal" class="close-button">&times;</span>
                                 <img src="./images/qr-demo.png" alt="">
-                                <button>Copy UPI Id <i class='bx bx-copy'></i></button>
-                                <button>Completed Payment <i class='bx bx-right-arrow-alt' ></i></button>
+                                <div class="copy-text">
+                                    <input type="text" class="text" value="427398472@paytm" />
+                                    <button class="copy-button"><i class='bx bx-copy'></i></button>
+                                </div>
+                                <button class="complete-payment">Completed Payment <i class='bx bx-right-arrow-alt' ></i></button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
             <div class="course-box"
                 data-aos="fade-up" 
                 data-aos-offset="200"
@@ -94,29 +103,35 @@
                         <li><i class='bx bx-timer' ></i> 3-4 Hours</li>
                         <li><i class='bx bx-certification' ></i> Certificatin of Complition</li>
                         <li><i class='bx bx-globe' ></i> Hinglish</li>
-                        <li><i class='bx bxs-battery-full' ></i> Beginners </li>
+                        <li><i class='bx bx-child'></i> Beginners </li>
                     </ul>
-                    <div>
-                        <h4>499Rs</h4>
-                        <i></i>
+                    <div style="display: flex;flex-direction: row;align-items: center; justify-content: space-between;">
+                        <h4>₹499</h4>
+                        <i class='bx bx-share-alt' ></i>
                     </div>
-                   <div class="course-enroll-button">
-                        <button id="openModal-2">Enroll Now <i class='bx bx-right-arrow-alt' ></i></button>
+                   <div>
+                        <button id="openModal-2" class="course-enroll-button">Enroll Now <i class='bx bx-right-arrow-alt' ></i></button>
 
                         <div id="modal-2" class="modal">
                             <div class="modal-content">
                                 <span id="closeModal-2" class="close-button">&times;</span>
+
                                 <img src="./images/qr-demo.png" alt="">
-                                <button>Copy UPI Id <i class='bx bx-copy'></i></button>
-                                <button>Completed Payment <i class='bx bx-right-arrow-alt' ></i></button>
+                                <div class="copy-text copy-text-2">
+                                    <input type="text" class="text text-2" value="427398472@paytm" />
+                                    <button class="copy-button copy-button-2"><i class='bx bx-copy'></i></button>
+                                </div>
+
+                                <button class="complete-payment">Completed Payment <i class='bx bx-right-arrow-alt' ></i></button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     <!-- -------Contact us / Faq's------- -->
-    <section class="faq-section">
+    <section class="faq-section" style="margin-top: -3rem;">
         <h1>Contact Us | FAQs</h1>
         <div class="faq-section-container">
             
@@ -266,26 +281,11 @@
     </footer>
     <!-- ----------------------------- -->
 </body>
-<script src="./app.js"></script>
+  
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    document.getElementById('openModal').addEventListener('click', function() {
-        document.getElementById('modal').style.display = 'flex';
-        });
-
-    document.getElementById('closeModal').addEventListener('click', function() {
-        document.getElementById('modal').style.display = 'none';
-    });
-
-    document.getElementById('openModal-2').addEventListener('click', function() {
-        document.getElementById('modal-2').style.display = 'flex';
-        });
-
-    document.getElementById('closeModal-2').addEventListener('click', function() {
-        document.getElementById('modal-2').style.display = 'none';
-    });
-  </script>
 <script>
     AOS.init();
 </script>
+<script src="./app.js"></script>
+
 </html>

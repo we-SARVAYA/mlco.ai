@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
     <style>
         .notes-section {
             margin: 0;
@@ -24,25 +24,28 @@
     </style>
 </head>
 <body>
-    <!-- --------Header--------- -->
-    <div class="navbar">
+    <div class="main-cursor">
+       <div class="circle"></div>
+    </div>
+    <!-- ----------------------------- -->
+    <div class="navbar" data-aos="fade-down">
         <div>
-            <h2>Mlco.ai</h2>
+            <a href="#"><img class="nav-logo" src="../images/logo-without-bg.png" alt=""></a>
         </div>
         <div class="nav-links">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Cources</a></li>
-                <li><a href="#">Notes</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a class="hover-underline-animation" href="./index.html">Home</a></li>
+                <li><a class="hover-underline-animation" href="./course-page.html">Course</a></li>
+                <li><a class="hover-underline-animation" href="./notes-page.html">Notes</a></li>
+                <li><a class="hover-underline-animation" href="./blogs/all-blogs.html">Blogs</a></li>
+                <li><a class="hover-underline-animation" href="#">Contact</a></li>
             </ul>
         </div>
         <i class='bx bx-menu'></i>
     </div>
-    <!-- -------Notes Section------- -->
     <div class="notes-section">
       <div class="heading-s1"  data-aos="fade-up" >
-          <h1>Our Notes.</h1>
+          <h1>Our Notes<span style="color: #FFBD59; background-color: #171717;">.</span></h1>
       </div>
       <div class="notes-container">
           <div class="ag-format-container">
@@ -61,7 +64,7 @@
                     </div>
             
                     <div class="ag-courses-item_date-box">
-                      Start:
+                      Date:
                       <span class="ag-courses-item_date">
                         04.11.2022
                       </span>
@@ -83,7 +86,7 @@
                     </div>
             
                     <div class="ag-courses-item_date-box">
-                      Start:
+                      Date:
                       <span class="ag-courses-item_date">
                         04.11.2022
                       </span>
@@ -105,7 +108,7 @@
                     </div>
             
                     <div class="ag-courses-item_date-box">
-                      Start:
+                      Date:
                       <span class="ag-courses-item_date">
                         04.11.2022
                       </span>
@@ -127,7 +130,7 @@
                     </div>
             
                     <div class="ag-courses-item_date-box">
-                      Start:
+                      Date:
                       <span class="ag-courses-item_date">
                         04.11.2022
                       </span>
@@ -149,7 +152,7 @@
                     </div>
             
                     <div class="ag-courses-item_date-box">
-                      Start:
+                      Date:
                       <span class="ag-courses-item_date">
                         30.11.2022
                       </span>
@@ -169,6 +172,13 @@
                     <div class="ag-courses-item_title">
                       Front-end development&#160;+ jQuery&#160;+ CMS
                     </div>
+
+                    <div class="ag-courses-item_date-box">
+                      Date:
+                      <span class="ag-courses-item_date">
+                        30.11.2022
+                      </span>
+                    </div>
                   </a>
                 </div>
 
@@ -177,177 +187,198 @@
       </div>
   </div>
     
-    <!-- -------Contact us / Faq's------- -->
-    <section class="faq-section">
-        <h1>Contact Us | FAQs</h1>
-        <div class="faq-section-container">
+   <!-- -------Contact us / Faq's------- -->
+   <section class="faq-section">
+    <h1 class="heading-s1">Contact Us | <span>FAQs</span></h1>
+    <div class="faq-section-container">
+        
+
+        <article class="faq-container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq">
+                <div class="faq--heading">
+                    <span>◾ Will I be able to download the study material from Mlco.ai  ? </span>
+                    <button> <i class='bx bx-right-arrow-alt'></i> </button>
+                </div>
             
-
-            <article class="faq-container">
-                <h2>Frequently Asked Questions</h2>
-                <div class="faq">
-                    <div class="faq--heading">
-                        <span>◾ Will I be able to download the study material from JU SPACE ? </span>
-                        <button> <i class='bx bx-right-arrow-alt'></i> </button>
-                    </div>
-                
-                    <div class="faq--content">
-                        <p>You will be able to save the study material on the platform as well as download it in the form of pdf file in your devices .</p>
-                    </div>
+                <div class="faq--content">
+                    <p>You will be able to save the study material on the platform as well as download it in the form of pdf file in your devices.</p>
                 </div>
-                <div class="faq">
-                    <div class="faq--heading">
-                        <span>◾How can I get my event updated on JU SPACE ?
-                        </span>
-                        <button><i class='bx bx-right-arrow-alt'></i></button>
-                    </div>
-                
-                    <div class="faq--content">
-                        <p>You can share your event date , timing , venue and a short description with the admin via the Google form available on JU SPACE.</p>
-                    </div>
-                </div>
-                <div class="faq">
-                    <div class="faq--heading">
-                        <span>◾How can I get my club / community to be displayed on JU SPACE ?</span>
-                        <button><i class='bx bx-right-arrow-alt'></i></button>
-                    </div>
-                
-                    <div class="faq--content">
-                        <p>You can share your club/community logo and description with the admin via the Google form available on JU SPACE .</p>
-                    </div>
-                </div>
-                <div class="faq">
-                    <div class="faq--heading">
-                        <span>◾How can I get my club / community to be displayed on JU SPACE ?</span>
-                        <button><i class='bx bx-right-arrow-alt'></i></button>
-                    </div>
-                
-                    <div class="faq--content">
-                        <p>You can share your club/community logo and description with the admin via the Google form available on JU SPACE .</p>
-                    </div>
-                </div>
-                
-                <p class="bottom-of-faq"><a href="#">Short on time? Skip the form—just text us at +9898986985!</a></p>
-
-            </article>
-
-            <article class="form-container">
-                <h2>Contact Us</h2>
-                
-                    <form action="https://api.web3forms.com/submit" method="POST">
-
-                <input type="hidden" name="access_key" value="8387466e-f58f-45f2-9662-90ae4603844d">
-
-                    <div>
-                        <label for="name">Name</label>
-                        <input id="name" type="text" name="name" required>
-                    </div>
-
-                    <div>
-                        <label for="email">Email</label>
-                        <input id="email" type="email" name="email" required>
-                    </div>
-
-                    <div>
-                        <label for="message">Message</label>
-                        <textarea id="message" rows="5" name="message" required></textarea>
-                    </div>
-                    <div class="h-captcha" data-captcha="true"></div>
-                    <input id="faq-submit-btn" type="submit" value="Click to Submit">
-                </form>
-            </article>
-        </div>
-    </section>
-    
-
-
-    <!-- -------community Box------- -->
-    <div class="community-section">
-        <div class="community-box">
-            <div class="community-left">
-                <h1>Still Confused?</h1>
-                <p>Get Connected to our experts and know what's best for you</p>
-                <a href="#"><button>Get Connected Now <i class='bx bx-right-arrow-alt' ></i></button></a>
             </div>
-            <div class="community-right">
-                 <img src="./images/88e876fc31c3e4374727c460ae727a95.png" alt="">
+            <div class="faq">
+                <div class="faq--heading">
+                    <span>◾How can I get my updated on Mlco.ai?
+                    </span>
+                    <button><i class='bx bx-right-arrow-alt'></i></button>
+                </div>
+            
+                <div class="faq--content">
+                    <p>You can share your event date , timing , venue and a short description with the admin via the Google form available on Mlco.ai</p>
+                </div>
             </div>
-        </div>
-        <svg class="bottom-svg" viewBox="0 0 1571 732" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1566.91 83.6144C1505.8 34.0963 1364.65 -43.7375 1369.71 47.7192C1376.04 162.04 1441.75 417.506 1342.83 392.645C1243.91 367.784 1243.96 236.278 1288.57 247.489C1350.64 263.089 1429.65 658.733 1090.77 642.748C772.835 627.751 440.792 551.965 512.498 660.512C598.499 790.7 245.329 706.1 3.48537 495.013" stroke="#00FF84" stroke-width="10"></path></svg>
+            <div class="faq">
+                <div class="faq--heading">
+                    <span>◾How can I get my courses to be displayed on Mlco.ai</span>
+                    <button><i class='bx bx-right-arrow-alt'></i></button>
+                </div>
+            
+                <div class="faq--content">
+                    <p>You can share your course and notes with the admin via the Google form available on Mlco.ai</p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq--heading">
+                    <span>◾How can I get my club / community to be displayed on Mlco.ai</span>
+                    <button><i class='bx bx-right-arrow-alt'></i></button>
+                </div>
+            
+                <div class="faq--content">
+                    <p>You can share your club/community logo and description with the admin via the Google form available on.</p>
+                </div>
+            </div>
+            
+            <p class="bottom-of-faq"><a href="#">Short on time? Skip the form—just text us at +9898986985!</a></p>
+
+        </article>
+
+        <article class="form-container">
+            <h2>Contact Us</h2>
+            
+                <form action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="8387466e-f58f-45f2-9662-90ae4603844d">
+
+                <div>
+                    <label for="name">Name</label>
+                    <input id="name" type="text" name="name" required>
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" name="message" required></textarea>
+                </div>
+                <div class="h-captcha" data-captcha="true"></div>
+                <input id="faq-submit-btn" type="submit" value="Click to Submit">
+            </form>
+        </article>
     </div>
+  </section>
 
-    <!-- -------Footer------- -->
-    <footer>
-        <div class="footer">
-            <div class="footer-logo" >
-                <img src="./images/logo-without-bg.png" alt="">
-            </div>
-            <div class="footer-container">
-                <div>
-                    <h3>Get in Touch.</h3>
-                    <ul class="footer-links">
-                        <li class="footer-link"><a href="#">+91 9374856204</a></li>
-                        <li class="footer-link"><a href="#">support@mlco.in</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Pages</h3>
-                    <ul class="footer-links">
-                        <li class="footer-link"><a href="#">About Us</a></li>
-                        <li class="footer-link"><a href="#">Contact Us</a></li>
-                        <li class="footer-link"><a href="#">Know Your Mentor</a></li>
-                        <li class="footer-link"><a href="#">Our Blogs</a></li>
-                        <li class="footer-link"><a href="#">Workshops</a></li>
-                        <li class="footer-link"><a href="#">Notes</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Company</h3>
-                    <ul class="footer-links">
-                        <li class="footer-link"><a href="#">Faq's</a></li>
-                        <li class="footer-link"><a href="#">Terms & Conditions</a></li>
-                        <li class="footer-link"><a href="#">Privacy Policy</a></li>
-                        <li class="footer-link"><a href="#">Sitemap</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Follow Us</h3>
-                    <ul class="footer-links">
-                        <li class="footer-link"><a href="#">WhatsApp Community</a></li>
-                        <li class="footer-link"><a href="#">Instagram</a></li>
-                        <li class="footer-link"><a href="#">Twitter</a></li>
-                        <li class="footer-link"><a href="#">Linkdin</a></li>
-                    </ul>
-                </div>
-                
-            </div>
-            <div class="footer-c">
-                <p>Copyright © mlco.ai 2024 | Developed by SARVAYA</p>
-            </div>
+   <!-- -------community Box------- -->
+   <div class="community-section" style="margin-top: 4rem;">
+    <div class="community-box">
+        <div class="community-left">
+            <h1>Still Confused?</h1>
+            <p>Get Connected to our experts and know what's best for you</p>
+            <a href="#"><button>Get Connected Now <i class='bx bx-right-arrow-alt' ></i></button></a>
         </div>
-    </footer>
-    <!-- ----------------------------- -->
-</body>
-<script src="./app.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    document.getElementById('openModal').addEventListener('click', function() {
-        document.getElementById('modal').style.display = 'flex';
-        });
+        <div class="community-right">
+             <img src="../images/88e876fc31c3e4374727c460ae727a95.png" alt="">
+        </div>
+    </div>
+  </div>
 
-    document.getElementById('closeModal').addEventListener('click', function() {
-        document.getElementById('modal').style.display = 'none';
-    });
+  <!-- -------Footer------- -->
+  <footer>
+      <div class="footer">
+          <div class="footer-logo" >
+              <img src="../images/logo-without-bg.png" alt="">
+          </div>
+          <div class="footer-container">
+              <div>
+                  <h3>Get in Touch.</h3>
+                  <ul class="footer-links">
+                      <li class="footer-link hover-underline-animation"><a href="#">+91 9374856204</a></li>
+                      <li class="footer-link hover-underline-animation"><a href="#">support@mlco.in</a></li>
+                  </ul>
+              </div>
+              <div>
+                  <h3>Pages</h3>
+                  <ul class="footer-links">
+                      <li class="footer-link hover-underline-animation"><a href="#">About Us</a></li>
+                      <li class="footer-link hover-underline-animation"><a href="#">Contact Us</a></li>
+                      <li class="footer-link hover-underline-animation"><a href="#">Know Your Mentor</a></li>
+                      <li class="footer-link hover-underline-animation"><a href="#">Our Blogs</a></li>
+                      <li class="footer-link hover-underline-animation"><a href="#">Workshops</a></li>
+                      <li class="footer-link hover-underline-animation"><a href="#">Notes</a></li>
+                  </ul>
+              </div>
+              <div>
+                  <h3>Company</h3>
+                  <ul class="footer-links">
+                      <li class="footer-link hover-underline-animation"><a href="#">Faq's</a></li>
+                      <li class="footer-link hover-underline-animation"><a href="#">Terms & Conditions</a></li>
+                      <li class="footer-link hover-underline-animation"><a href="#">Privacy Policy</a></li>
+                      <li class="footer-link hover-underline-animation"><a href="#">Sitemap</a></li>
+                  </ul>
+              </div>
+              <div>
+                  <h3>Follow Us</h3>
+                  <ul class="footer-links">
+                      <li class="footer-link hover-underline-animation"><a href="#">WhatsApp Community</a></li>
+                      <li class="footer-link hover-underline-animation"><a href="#">Instagram</a></li>
+                      <li class="footer-link hover-underline-animation"><a href="#">Twitter</a></li>
+                      <li class="footer-link hover-underline-animation"><a href="#">Linkdin</a></li>
+                  </ul>
+              </div>
+              
+          </div>
+          <div class="footer-c">
+              <p>Copyright © mlco.ai 2024 | Designed by <a href="https://www.sarvaya.in/" target="_blank">SARVAYA</a></p>
+          </div>
+      </div>
+  </footer>
+  </body>
 
-    document.getElementById('openModal-2').addEventListener('click', function() {
-        document.getElementById('modal-2').style.display = 'flex';
-        });
-
-    document.getElementById('closeModal-2').addEventListener('click', function() {
-        document.getElementById('modal-2').style.display = 'none';
-    });
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init();
   </script>
-<script>
-    AOS.init();
-</script>
+  <script>  
+          const coords = { x: 0, y: 0 };
+          const circles = document.querySelectorAll(".circle");
+          
+          const colors = [
+            "#FFBD59",
+          ];
+          
+          circles.forEach(function (circle, index) {
+            circle.x = 0;
+            circle.y = 0;
+            circle.style.backgroundColor = colors[index % colors.length];
+          });
+          
+          window.addEventListener("mousemove", function(e){
+            coords.x = e.clientX;
+            coords.y = e.clientY;
+            
+          });
+          function animateCircles() {
+            
+            let x = coords.x;
+            let y = coords.y;
+            
+            circles.forEach(function (circle, index) {
+              circle.style.left = x - 12 + "px";
+              circle.style.top = y - 12 + "px";
+              
+              circle.style.scale = (circles.length - index) / circles.length;
+              
+              circle.x = x;
+              circle.y = y;
+          
+              const nextCircle = circles[index + 1] || circles[0];
+              x += (nextCircle.x - x) * 0.3;
+              y += (nextCircle.y - y) * 0.3;
+            });
+           
+            requestAnimationFrame(animateCircles);
+          }
+          animateCircles();
+    </script>
 </html>
