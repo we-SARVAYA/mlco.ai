@@ -1,5 +1,7 @@
 .blog-heading{
     height: 28vh;
+    padding-top: 4rem;
+    margin-bottom: 4rem;
 }
 .blog-heading h1{
     font-family: var(--primary-font);

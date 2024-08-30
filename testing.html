@@ -7,79 +7,28 @@
     <link rel="stylesheet" href="testing.css">
 </head>
 <body>
-    <div class="scroll-wrapper">
-        <div class="auto-scroll-container up-scroll">
-            <div class="auto-scroll-content">
-                <div class="auto-scroll-item">Item 1</div>
-                <div class="auto-scroll-item">Item 2</div>
-                <div class="auto-scroll-item">Item 3</div>
-                <div class="auto-scroll-item">Item 4</div>
-                <div class="auto-scroll-item">Item 5</div>
-                <!-- Repeat items for seamless scrolling -->
-                <div class="auto-scroll-item">Item 1</div>
-                <div class="auto-scroll-item">Item 2</div>
-                <div class="auto-scroll-item">Item 3</div>
-                <div class="auto-scroll-item">Item 4</div>
-                <div class="auto-scroll-item">Item 5</div>
-            </div>
-        </div>
+    <div class="content">
+        <h1>Welcome to My Page</h1>
+        <button id="openModal">Open Modal</button>
+    </div>
 
-        <div class="auto-scroll-container down-scroll">
-            <div class="auto-scroll-content">
-                <div class="auto-scroll-item">Item A</div>
-                <div class="auto-scroll-item">Item B</div>
-                <div class="auto-scroll-item">Item C</div>
-                <div class="auto-scroll-item">Item D</div>
-                <div class="auto-scroll-item">Item E</div>
-                <!-- Repeat items for seamless scrolling -->
-                <div class="auto-scroll-item">Item A</div>
-                <div class="auto-scroll-item">Item B</div>
-                <div class="auto-scroll-item">Item C</div>
-                <div class="auto-scroll-item">Item D</div>
-                <div class="auto-scroll-item">Item E</div>
-            </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close-button">&times;</span>
+            <h2>Modal Title</h2>
+            <p>This is a modal window. Click the close button to go back.</p>
         </div>
     </div>
 
     <script>
-      window.onload = function() {
-    const upScrollContent = document.querySelector('.up-scroll .auto-scroll-content');
-    const upScrollItems = document.querySelectorAll('.up-scroll .auto-scroll-item');
-    
-    const downScrollContent = document.querySelector('.down-scroll .auto-scroll-content');
-    const downScrollItems = document.querySelectorAll('.down-scroll .auto-scroll-item');
-    
-    let itemHeightUp = upScrollItems[0].offsetHeight;
-    let totalHeightUp = itemHeightUp * upScrollItems.length / 2;
+     document.getElementById('openModal').addEventListener('click', function() {
+    document.getElementById('modal').style.display = 'flex';
+});
 
-    let itemHeightDown = downScrollItems[0].offsetHeight;
-    let totalHeightDown = itemHeightDown * downScrollItems.length / 2;
+document.getElementById('closeModal').addEventListener('click', function() {
+    document.getElementById('modal').style.display = 'none';
+});
 
-    // Initialize positions for seamless scrolling
-    upScrollContent.style.bottom = `-${totalHeightUp}px`;
-    downScrollContent.style.top = `-${totalHeightDown}px`;
-
-    function startUpScroll() {
-        let currentBottom = parseInt(upScrollContent.style.bottom);
-        if (Math.abs(currentBottom) >= totalHeightUp) {
-            upScrollContent.style.bottom = '0px'; // Reset to bottom
-        } else {
-            upScrollContent.style.bottom = `${currentBottom - 1}px`; // Move upwards
-        }
-    }
-
-    function startDownScroll() {
-        let currentTop = parseInt(downScrollContent.style.top);
-        if (Math.abs(currentTop) >= totalHeightDown) {
-            downScrollContent.style.top = '0px'; // Reset to top
-        } else {
-            downScrollContent.style.top = `${currentTop - 1}px`; // Move upwards
-        }
-    }
-
-    setInterval(startUpScroll, 20); // Adjust the speed by changing the interval
-    setInterval(startDownScroll, 20); // Adjust the speed by changing the interval
-};
 
     </script>
 </body>

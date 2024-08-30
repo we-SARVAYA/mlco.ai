@@ -1,5 +1,8 @@
+body{
+    font-family: ;
+}
 .article-section{
-    margin-top: 4rem;
+    padding-top: 4rem;
 }
 .article-content,.article-section{
     display: flex;
@@ -46,12 +49,12 @@
 /* ------------------------------ */
 @media(max-width:720px){
     .article-section{
-        margin-top: 1rem;
+        padding-top: 1rem;
     }
 
     .article-content,.article-heading{
         width: 90%;
-        margin: 2rem 0;
+        padding: 2rem 0;
     }
     .article-heading h3{
         color: #8c8c8c;
@@ -74,12 +77,12 @@
 /* ------------------------------ */
 @media(max-width:520px){
     .article-section{
-        margin-top: 1rem;
+        padding-top: 3rem;
     }
 
     .article-content,.article-heading{
         width: 90%;
-        margin: 2rem 0;
+        padding: 2rem 0;
     }
     .article-heading h3{
         color: #8c8c8c;
