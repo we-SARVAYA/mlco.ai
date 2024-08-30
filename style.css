@@ -1343,11 +1343,11 @@ footer .footer{
         top: 2rem;
     }
     .hero-left{
-        margin-top: 6rem;
+        padding-top: 8rem;
         margin-bottom: 3rem;
     }
     .hero-left h1{
-        font-size: 12vw;
+        font-size: 8vw;
         line-height: 60px;
     }
     .hero-left h4{
@@ -1444,6 +1444,32 @@ footer .footer{
     
     
     /* --------------- */ 
+        
+    .view-all-button{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .view-all-button a{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: #000;
+        font-weight: 900;
+        font-size: 18px;
+        border-radius: 8px;
+        width: 16rem;
+        height: 3rem;
+        background-color: #fff;
+        border: 1px solid #fff;
+        transition: all ease-in-out .2s;
+        margin-bottom: 2rem;
+        margin-top: -2rem;
+    }
+    /* --------------- */ 
     .mentors-section{
         height: auto;
         margin-top: -4rem;
@@ -1503,10 +1529,11 @@ footer .footer{
     .certificate-section {
         margin-bottom: 4rem;
         padding: 3rem;
+        margin-top: 2rem;
     }
     
     .certificate-section h1 {
-        font-size: 5.2vw;
+        font-size: 8.6vw;
         margin-bottom: 18px;
     }
     .certificate-section img{
@@ -1562,7 +1589,8 @@ footer .footer{
     .community-left button{
         margin-top: 38px;
         padding: 8px 10px;
-        width: 12rem;
+        width: 10rem;
+        font-size: 12px;
     }
 
     /* --------------- */
@@ -1607,6 +1635,12 @@ footer .footer{
     
 }
 @media only screen and (max-width: 500px) {
+
+    .nav-logo {
+        height: 2rem;
+        width: 5.2rem;
+        margin-top: 10px;
+    }
     
     .faq-section-container {
         grid-template-columns: 1fr;
@@ -1615,6 +1649,7 @@ footer .footer{
 
     .form-container {
         padding: 3.6rem;
+        margin-left: -2rem;
     }
 
     .footer-container {
@@ -1628,7 +1663,7 @@ footer .footer{
         margin-top: 0rem;
         margin-left: -5rem;
         margin-bottom: -28rem;
-        margin-top: -26rem;
+        margin-top: -28rem;
     }
     .faq-section h1 {
         font-size: 4.4rem;
