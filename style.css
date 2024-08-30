@@ -1303,6 +1303,9 @@ footer .footer{
 }
 
 @media(max-width:600px){
+    .circle{
+        display: none;
+    }
     .navbar {
         padding: 1.2rem 1.4rem;
         width: 100vw;
@@ -1347,8 +1350,8 @@ footer .footer{
         margin-bottom: 3rem;
     }
     .hero-left h1{
-        font-size: 8vw;
-        line-height: 60px;
+        font-size: 7vw;
+        line-height: 50px;
     }
     .hero-left h4{
         width: 18rem;
@@ -1670,4 +1673,8 @@ footer .footer{
         margin-bottom: 4.8rem;
         margin-right: -10rem;
     }
+    .bottom-of-faq a{
+        line-height: 48px;
+    }
+
 }
