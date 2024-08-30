@@ -19,6 +19,7 @@ body{
     color: #fff;
     overflow-x: hidden;
     cursor: none;
+    user-select: none; /* Standard syntax */
 }
 
 .circle {
