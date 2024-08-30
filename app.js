@@ -1,3 +1,16 @@
+var sideNav = document.querySelector('.side-nav');
+var menu = document.querySelector('.bx-menu');
+var close = document.querySelector('.bx-x')
+
+
+menu.addEventListener('click',()=>{
+    sideNav.style.display='block';
+})
+close.addEventListener('click',()=>{
+    sideNav.style.display='none';
+})
+
+
 let faqs= document.querySelectorAll(".faq");
 
 faqs.forEach(elem => {

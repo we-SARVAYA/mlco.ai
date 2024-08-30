@@ -23,14 +23,27 @@
         </div>
         <div class="nav-links">
             <ul>
-                <li><a class="hover-underline-animation" href="./index.html">Home</a></li>
-                <li><a class="hover-underline-animation" href="./course-page.html">Course</a></li>
-                <li><a class="hover-underline-animation" href="./notes-page.html">Notes</a></li>
-                <li><a class="hover-underline-animation" href="./blogs/all-blogs.html">Blogs</a></li>
-                <li><a class="hover-underline-animation" href="#">Contact</a></li>
+                <li><a class="hover-underline-animation" href="../index.html">Home</a></li>
+                <li><a class="hover-underline-animation" href="../course-page.html">Course</a></li>
+                <li><a class="hover-underline-animation" href="../notes-page.html">Notes</a></li>
+                <li><a class="hover-underline-animation" href="../blogs/all-blogs.html">Blogs</a></li>
+                <li><a class="hover-underline-animation" href="../contact.html">Contact</a></li>
             </ul>
         </div>
         <i class='bx bx-menu'></i>
+
+        <div class="side-nav">
+            <i class='bx bx-x' ></i>
+            <div class="nav-links">
+                <ul>
+                    <li><a class="hover-underline-animation" href="./index.html">Home</a></li>
+                    <li><a class="hover-underline-animation" href="./course-page.html">Course</a></li>
+                    <li><a class="hover-underline-animation" href="./notes-page.html">Notes</a></li>
+                    <li><a class="hover-underline-animation" href="./blogs/all-blogs.html">Blogs</a></li>
+                    <li><a class="hover-underline-animation" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
     <!-- ----------------------------- -->
     <div class="blog-main">
@@ -279,5 +292,19 @@
           requestAnimationFrame(animateCircles);
         }
         animateCircles();
+
+        
+        var sideNav = document.querySelector('.side-nav');
+        var menu = document.querySelector('.bx-menu');
+        var close = document.querySelector('.bx-x')
+        
+        
+        menu.addEventListener('click',()=>{
+            sideNav.style.display='block';
+        })
+        close.addEventListener('click',()=>{
+            sideNav.style.display='none';
+        })
+
   </script>
 </html>

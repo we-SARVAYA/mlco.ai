@@ -29,20 +29,34 @@
     </div>
     <!-- ----------------------------- -->
     <div class="navbar" data-aos="fade-down">
-        <div>
-            <a href="#"><img class="nav-logo" src="./images/logo-without-bg.png" alt=""></a>
-        </div>
-        <div class="nav-links">
-            <ul>
-                <li><a class="hover-underline-animation" href="./index.html">Home</a></li>
-                <li><a class="hover-underline-animation" href="./course-page.html">Course</a></li>
-                <li><a class="hover-underline-animation" href="./notes-page.html">Notes</a></li>
-                <li><a class="hover-underline-animation" href="./blogs/all-blogs.html">Blogs</a></li>
-                <li><a class="hover-underline-animation" href="#">Contact</a></li>
-            </ul>
-        </div>
-        <i class='bx bx-menu'></i>
-    </div>
+      <div>
+          <a href="#"><img class="nav-logo" src="./images/logo-without-bg.png" alt=""></a>
+      </div>
+      <div class="nav-links">
+          <ul>
+              <li><a class="hover-underline-animation" href="./index.html">Home</a></li>
+              <li><a class="hover-underline-animation" href="./course-page.html">Course</a></li>
+              <li><a class="hover-underline-animation" href="./notes-page.html">Notes</a></li>
+              <li><a class="hover-underline-animation" href="./blogs/all-blogs.html">Blogs</a></li>
+              <li><a class="hover-underline-animation" href="#">Contact</a></li>
+          </ul>
+      </div>
+      <i class='bx bx-menu'></i>
+
+      <div class="side-nav">
+          <i class='bx bx-x' ></i>
+          <div class="nav-links">
+              <ul>
+                  <li><a class="hover-underline-animation" href="./index.html">Home</a></li>
+                  <li><a class="hover-underline-animation" href="./course-page.html">Course</a></li>
+                  <li><a class="hover-underline-animation" href="./notes-page.html">Notes</a></li>
+                  <li><a class="hover-underline-animation" href="./blogs/all-blogs.html">Blogs</a></li>
+                  <li><a class="hover-underline-animation" href="#">Contact</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <!-- ----------------------------- -->
     <div class="notes-section">
       <div class="heading-s1"  data-aos="fade-up" >
           <h1>Our Notes<span style="color: #FFBD59; background-color: #171717;">.</span></h1>
@@ -382,13 +396,23 @@
           animateCircles();
 
           let faqs= document.querySelectorAll(".faq");
+        
+        faqs.forEach(elem => {
+            elem.addEventListener("click", () => {
+                elem.classList.toggle("active");
+            });
+        });
 
-faqs.forEach(elem => {
-    elem.addEventListener("click", () => {
-        elem.classList.toggle("active");
-    });
-});
-
-
+        var sideNav = document.querySelector('.side-nav');
+        var menu = document.querySelector('.bx-menu');
+        var close = document.querySelector('.bx-x')
+        
+        
+        menu.addEventListener('click',()=>{
+            sideNav.style.display='block';
+        })
+        close.addEventListener('click',()=>{
+            sideNav.style.display='none';
+        })
     </script>
 </html>

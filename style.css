@@ -129,8 +129,12 @@ a{
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+.side-nav ul,.side-nav{
+    display: none;
+}
 
 /* ---------------------------------- */
+
 .dot-span{
     color: var(--theme-color);
 }
@@ -1306,6 +1310,30 @@ footer .footer{
     .circle{
         display: none;
     }
+    
+    .side-nav{
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #222121;
+        height: 120vh;
+        width: 60vw;
+        transition: all 3s ease-in-out;
+    }
+    .side-nav .nav-links ul{
+        display: block;
+        margin: 6rem 1rem;
+    }
+    .side-nav .bx-x{
+        display: block;
+        z-index: 100;
+        position: absolute;
+        right: 1.1rem;
+        top: 1.6rem;
+        font-size: 2rem;
+    }
+
     .navbar {
         padding: 1.2rem 1.4rem;
         width: 100vw;
@@ -1323,7 +1351,6 @@ footer .footer{
         display: block;
         font-size: 1.6rem;
     }
-
     
     /* --------------- */
     .heading-s1{

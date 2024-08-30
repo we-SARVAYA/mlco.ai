@@ -111,17 +111,6 @@
 }
 /* ---------------------------------- */
 @media(max-width:520px){
-    .navbar {
-        padding: 1.8rem 1.6rem;
-    }
-    .navbar i{
-        display: block;
-        font-size: 1.4rem;
-    }
-    .nav-links{
-        display: none;
-    }
-
     .blog-heading {
         height: 20vh;
     }
