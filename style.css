@@ -1509,13 +1509,12 @@ footer .footer{
          margin-left: 0rem;
          margin: 2rem;
      }
-     
      .mentor-exp{
          flex-direction: row;
          width: 100%;
      }
      .mentor-exp div h3{
-         font-size: 2rem;
+         font-size: 1.6rem;
          margin-bottom: 12px;
      }
      .mentor-exp div p{
@@ -1524,9 +1523,10 @@ footer .footer{
      .mentor-exp div:nth-child(2){
          border-top: none;
          border-bottom: none;
-         border-left: 1px solid #545454;
-         border-right: 1px solid #545454;
      }
+     .mentor-exp div:nth-child(2) {
+        padding: 12px 0;
+    }
      
     /* --------------- */
     .certificate-section {
