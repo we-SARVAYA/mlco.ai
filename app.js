@@ -21,7 +21,6 @@ faqs.forEach(elem => {
 
 
 
-
 let copyText = document.querySelector(".copy-text");
 copyText.querySelector("button").addEventListener("click", function () {
 	let input = copyText.querySelector("input.text");
@@ -148,7 +147,43 @@ document.getElementById('closeModal-2').addEventListener('click', function() {
     document.getElementById('modal-2').style.display = 'none';
 });
 
+var exploreMore = document.querySelector('.course-enroll-button');
+var longDc = document.querySelector('.long-dc');
+var shortDc = document.querySelector('.short-dc');
+var webinarImg = document.querySelector('.webinar-img');
+var webinarBackBtn = document.querySelector('.webinar-back-btn');
 
+exploreMore.addEventListener('click',()=>{
+    longDc.style.display='block';
+    shortDc.style.display='none';
+    webinarImg.style.display='none';
+})
+
+webinarBackBtn.addEventListener('click',()=>{
+    longDc.style.display='none';
+    shortDc.style.display='block';
+    webinarImg.style.display='block';
+})
+
+// ------------------------------------------------------------------------
+
+var exploreMore2 = document.querySelector('.course-enroll-button-2');
+var longDc2 = document.querySelector('.long-dc-2');
+var shortDc2 = document.querySelector('.short-dc-2');
+var webinarImg2 = document.querySelector('.webinar-img-2');
+var webinarBackBtn2 = document.querySelector('.webinar-back-btn-2');
+
+exploreMore2.addEventListener('click',()=>{
+    longDc2.style.display='block';
+    shortDc2.style.display='none';
+    webinarImg2.style.display='none';
+})
+
+webinarBackBtn2.addEventListener('click',()=>{
+    longDc2.style.display='none';
+    shortDc2.style.display='block';
+    webinarImg2.style.display='block';
+})
 
 var courseBox = document.querySelector('.course-box');
 var shortDc = document.querySelector('.short-dc');
@@ -157,4 +192,7 @@ var longDc = document.querySelector('.long-dc');
 courseBox.addEventListener('click',()=>{
     
 })
+
+
+// -------------------------------------------
 

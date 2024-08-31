@@ -315,15 +315,24 @@ a{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    transition: all ease-in-out .4s;
 }
 
+/* --------------------------------------- */
+
+.explore-button a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .short-dc,.course-box img{
     /* display: none; */
 }
 
-.long-dc{
+.long-dc,.long-dc-2{
     display: none;
 }
 
+/* ---------------------------- */
 
 /* .course-box:hover{
     transition: all ease-in-out .4s;
@@ -598,6 +607,16 @@ color: #ee5535;
     font-weight: 600;
     border: 1px solid #34333395;
     transition: all ease-in-out .4s;
+}
+.long-dc-buttons{
+    display: flex;
+    flex-direction: row;
+}
+.long-dc-buttons button{
+    width: 49%;
+}
+.long-dc-buttons button:nth-child(1){
+    margin-right: 7px;
 }
 .course-enroll-button:hover{
     background-color: #000000;
