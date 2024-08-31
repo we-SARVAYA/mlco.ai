@@ -713,6 +713,7 @@ color: #ee5535;
   flex-wrap: wrap;
 
   padding: 50px 0;
+  padding-bottom: 0px;
 }
 .ag-courses_item {
   -ms-flex-preferred-size: calc(33.33333% - 30px);
