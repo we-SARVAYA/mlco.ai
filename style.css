@@ -1192,13 +1192,13 @@ color: #ee5535;
     position: absolute;
     z-index: -1;
     transform: scale(1.05);
-    width: 100vw!important;
+    width: 90vw!important;
 }
-/* @media(max-width:600px){
+@media(max-width:600px){
     .footer-svg img{
-        width: 100vw;
+        width: 93vw;
     }
-} */
+}
 
 /* ------------------------------- */
 
@@ -1210,7 +1210,7 @@ textarea {
     transform: scale(.75);
     margin-bottom: 5rem;
     /* margin-top: -6rem; */
-    margin-top: 4rem;
+    padding-top: 4rem;
 }
 
 .faq-section h1 {
@@ -1468,7 +1468,7 @@ footer .footer{
     .faq-section {
         transform: scale(.70);
         margin-bottom: 1rem;
-        margin-top: 1rem;
+        padding-top: 1rem;
     }
     .faq {
         width: 45rem;
@@ -1673,6 +1673,7 @@ footer .footer{
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        margin-top: 2rem;
     }
     
     .view-all-button a{
