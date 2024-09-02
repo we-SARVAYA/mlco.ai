@@ -1345,7 +1345,7 @@ textarea {
     transition: .3s;
 }
 
-.faq--heading button  i{
+.faq--heading button i{
     color: #fff!important;
     font-size: 1.6rem;
     background-color: #292929;
@@ -1355,9 +1355,13 @@ textarea {
 }
 
 .faq.active .faq--heading button {
-    transform: rotate(-180deg);
+    transform: rotate(-90deg);
     transition: .3s;
 }
+
+/* .faq:hover #faq-arrow{
+     color: green;
+} */
 
 .faq .faq--content {
     height: 0;
