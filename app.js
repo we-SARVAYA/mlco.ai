@@ -47,17 +47,17 @@ copyText2.querySelector("button").addEventListener("click", function () {
 	}, 500);
 });
 
-let copyText3 = document.querySelector(".copy-text-3");
-copyText3.querySelector("button").addEventListener("click", function () {
-	let input = copyText3.querySelector("input.text");
-	input.select();
-	document.execCommand("copy");
-	copyText3.classList.add("active");
-	window.getSelection().removeAllRanges();
-	setTimeout(function () {
-		copyText3.classList.remove("active");
-	}, 500);
-});
+// let copyText3 = document.querySelector(".copy-text-3");
+// copyText3.querySelector("button").addEventListener("click", function () {
+// 	let input = copyText3.querySelector("input.text");
+// 	input.select();
+// 	document.execCommand("copy");
+// 	copyText3.classList.add("active");
+// 	window.getSelection().removeAllRanges();
+// 	setTimeout(function () {
+// 		copyText3.classList.remove("active");
+// 	}, 500);
+// });
 
 
 
@@ -175,13 +175,13 @@ document.getElementById('closeModal-2').addEventListener('click', function() {
 
 // ---------------------------------------
 
-document.getElementById('openModal-3').addEventListener('click', function() {
-    document.getElementById('modal-3').style.display = 'flex';
-    });
+// document.getElementById('openModal-3').addEventListener('click', function() {
+//     document.getElementById('modal-3').style.display = 'flex';
+//     });
 
-document.getElementById('closeModal-3').addEventListener('click', function() {
-    document.getElementById('modal-3').style.display = 'none';
-});
+// document.getElementById('closeModal-3').addEventListener('click', function() {
+//     document.getElementById('modal-3').style.display = 'none';
+// });
 
 // ------------------------------------------------------------------------
 
@@ -234,22 +234,22 @@ courseBox.addEventListener('click',()=>{
 
 // ---------------------------------------
 
-var exploreMore3 = document.querySelector('.course-enroll-button-3');
-var longDc3 = document.querySelector('.long-dc-3');
-var shortDc3 = document.querySelector('.short-dc-3');
-var webinarImg3 = document.querySelector('.webinar-img-3');
-var webinarBackBtn3 = document.querySelector('.webinar-back-btn-3');
+// var exploreMore3 = document.querySelector('.course-enroll-button-3');
+// var longDc3 = document.querySelector('.long-dc-3');
+// var shortDc3 = document.querySelector('.short-dc-3');
+// var webinarImg3 = document.querySelector('.webinar-img-3');
+// var webinarBackBtn3 = document.querySelector('.webinar-back-btn-3');
 
-exploreMore3.addEventListener('click',()=>{
-    longDc3.style.display='block';
-    shortDc3.style.display='none';
-    webinarImg3.style.display='none';
-})
+// exploreMore3.addEventListener('click',()=>{
+//     longDc3.style.display='block';
+//     shortDc3.style.display='none';
+//     webinarImg3.style.display='none';
+// })
 
-webinarBackBtn3.addEventListener('click',()=>{
-    longDc3.style.display='none';
-    shortDc3.style.display='block';
-    webinarImg3.style.display='block';
-})
+// webinarBackBtn3.addEventListener('click',()=>{
+//     longDc3.style.display='none';
+//     shortDc3.style.display='block';
+//     webinarImg3.style.display='block';
+// })
 
 // ------------------------------------------------------------------------

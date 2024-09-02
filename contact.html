@@ -10,6 +10,14 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <style>
+        @media(max-width: 500px) {
+            .faq-section{
+                height: 90vh;
+                margin-bottom: 38rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="main-cursor">
@@ -26,11 +34,11 @@
                 <li><a class="hover-underline-animation" href="./webinar.html">Masterclass</a></li>
                 <li><a class="hover-underline-animation" href="./notes-page.html">Notes</a></li>
                 <li><a class="hover-underline-animation" href="./blogs/all-blogs.html">Blogs</a></li>
-                <li><a class="hover-underline-animation" href="./contact.html">Contact</a></li>
+                <li><a class="hover-underline-animation" href="#contact">Contact</a></li>
             </ul>
         </div>
         <i class='bx bx-menu'></i>
-    
+
         <div class="side-nav">
             <i class='bx bx-x' ></i>
             <div class="nav-links">
@@ -39,7 +47,7 @@
                     <li><a class="hover-underline-animation" href="./webinar.html">Masterclass</a></li>
                     <li><a class="hover-underline-animation" href="./notes-page.html">Notes</a></li>
                     <li><a class="hover-underline-animation" href="./blogs/all-blogs.html">Blogs</a></li>
-                    <li><a class="hover-underline-animation" href="#">Contact</a></li>
+                    <li><a class="hover-underline-animation" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -203,7 +211,19 @@
     <script>
         AOS.init();
     </script>
-    <script>  
+    <script> 
+        var sideNav = document.querySelector('.side-nav');
+        var menu = document.querySelector('.bx-menu');
+        var close = document.querySelector('.bx-x')
+        
+        
+        menu.addEventListener('click',()=>{
+            sideNav.style.display='block';
+        })
+        close.addEventListener('click',()=>{
+            sideNav.style.display='none';
+        })
+
         const coords = { x: 0, y: 0 };
         const circles = document.querySelectorAll(".circle");
         
@@ -252,20 +272,5 @@
               elem.classList.toggle("active");
           });
       });
-
-      var sideNav = document.querySelector('.side-nav');
-      var menu = document.querySelector('.bx-menu');
-      var close = document.querySelector('.bx-x')
-      
-      
-      menu.addEventListener('click',()=>{
-          sideNav.style.display='block';
-      })
-      close.addEventListener('click',()=>{
-          sideNav.style.display='none';
-      })
-  </script>
-  <script>
-     
   </script>
 </html>
