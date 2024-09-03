@@ -201,19 +201,20 @@ a{
     line-height: 80px;
 }
 .hero-left h4{
-    width: 18rem;
+    width: 22rem;
     margin-bottom: 1rem;
     padding: 12px;
     border: 1px dotted #5c5b5b;
     background-color: var(--theme-bg-color);
+    font-size: 16px;
 }
 .hero-left button{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 2rem;
     border: none;
-    width: 12rem;
+    width: 16rem;
     height: 2.6rem;
     border-radius: 6px;
     font-size: 1rem;
@@ -287,17 +288,12 @@ a{
 .about-right ul li i{
     color: #FFBD59;
 }
-.about-section svg{
-    position: absolute;
-    right: -6rem;
-    z-index: -2;
-    transform: rotate(180deg);
-}
 
-.pattern-2{
+.pattern-2-svg{
     position: absolute;
-    top: 2000px;
-    left: 0;
+    right: -8rem;
+    transform: rotate(180deg);
+    z-index: -10;
 }
 
 /* ---------------------------------- */
@@ -928,7 +924,7 @@ color: #ee5535;
     margin-top: 2.2rem;
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 2rem;
 }
 .sub-notes-box{
@@ -1577,22 +1573,24 @@ footer .footer{
         margin-bottom: 3rem;
     }
     .hero-left h1{
-        font-size: 7vw;
+        font-size: 7.5vw;
         line-height: 50px;
     }
     .hero-left h4{
-        width: 18rem;
+        width: 19rem;
         margin-bottom: 1rem;
         padding: 12px;
+        font-size: 14px;
         border: 1px dotted #5c5b5b;
     }
     .hero-left button{
-        margin-top: 2rem;
+        margin-top: 1rem;
         border: none;
-        width: 12rem;
-        height: 2.6rem;
-        border-radius: 1px;
+        width: 16rem;
+        height: 2.4rem;
+        border-radius: 4px;
         font-size: 1rem;
+        justify-content: space-around;
     }
     .hero-left button i{
         margin-left: 4px;
