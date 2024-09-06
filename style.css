@@ -172,6 +172,19 @@ a{
     display: none;
 }
 
+@keyframes smooth-appear {
+    from {
+        left: 0px
+      }
+      to {
+        right: 20px
+      }
+    }
+    .side-nav {
+      opacity: 0;
+      animation: smooth-appear .4s ease forwards;
+}
+
 /* ---------------------------------- */
 
 .dot-span{
@@ -340,6 +353,78 @@ a{
     display: none;
 }
 
+@keyframes smooth-appear {
+  to{
+    bottom: 20px;
+    opacity:1;
+  }
+}
+.long-dc,.long-dc-2,.short-dc,.short-dc-2 {
+  opacity:0;
+  animation: smooth-appear 1s ease forwards;
+}
+
+/* ---------------------------- */
+
+.share-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    /* position: relative; */
+}
+
+.share-menu {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 200px;
+    /* right: 0; */
+    
+}
+
+.share-menu a {
+    display: block;
+    text-decoration: none;
+    color: #007bff;
+    padding: 8px 10px;
+    border-radius: 3px;
+    margin: 5px 0;
+    transition: background-color 0.3s ease;
+}
+
+.share-menu a:hover {
+    background-color: #e9ecef;
+    color: #0056b3;
+}
+
+.share-menu button {
+    display: block;
+    width: 100%;
+    background-color: #6c757d;
+    color: white;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: left;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.share-menu button:hover {
+    background-color: #5a6268;
+}
+
 /* ---------------------------- */
 
 /* .course-box:hover{
@@ -441,9 +526,7 @@ a{
 /* ------------------------------- */
 
 .mt-100{
-
     margin-top: 100px;
-
 }
 
 .modal {
