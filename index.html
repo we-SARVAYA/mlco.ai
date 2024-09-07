@@ -1140,6 +1140,20 @@
             menu2.style.display = 'none';
         }
     });
+
+    document.addEventListener('click', function(event) {
+        const menu3 = document.getElementById('shareMenu3');
+        if (!event.target.closest('.share-btn') && !event.target.closest('.share-menu')) {
+            menu3.style.display = 'none';
+        }
+    });
+
+    document.addEventListener('click', function(event) {
+        const menu4 = document.getElementById('shareMenu4');
+        if (!event.target.closest('.share-btn') && !event.target.closest('.share-menu')) {
+            menu4.style.display = 'none';
+        }
+    });
 </script>
 <script>
     AOS.init();
