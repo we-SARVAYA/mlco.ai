@@ -326,6 +326,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 7rem;
 }
 .course-box {
     width: 28vw;
@@ -366,72 +367,6 @@ a{
 
 /* ---------------------------- */
 
-.share-btn {
-    background-color: #007bff;
-    color: white;
-    padding: 8px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    /* position: relative; */
-}
-
-.share-menu {
-    display: none;
-    position: absolute;
-    bottom: 0;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    width: 200px;
-    /* right: 0; */
-    
-}
-
-.share-menu a {
-    display: block;
-    text-decoration: none;
-    color: #007bff;
-    padding: 8px 10px;
-    border-radius: 3px;
-    margin: 5px 0;
-    transition: background-color 0.3s ease;
-}
-
-.share-menu a:hover {
-    background-color: #e9ecef;
-    color: #0056b3;
-}
-
-.share-menu button {
-    display: block;
-    width: 100%;
-    background-color: #6c757d;
-    color: white;
-    padding: 8px 10px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    text-align: left;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.share-menu button:hover {
-    background-color: #5a6268;
-}
-
-/* ---------------------------- */
-
-/* .course-box:hover{
-    transition: all ease-in-out .4s;
-    background-color: rgba(25, 25, 25, 0.851)
-    
-} */
 .course-d-list ul{
     list-style: disc;
 }
@@ -468,56 +403,66 @@ a{
 }
 
 .share-btn {
-    background-color: #007bff;
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    position: relative;
+    background-color: transparent;
+    font-size: 2.2rem;
 }
 
-.share-menu {
+
+.share-menu a:hover {
+    background-color: #e9ecef;
+}
+.share-menu{
     display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    animation: share-smooth-appear;
     z-index: 1000;
-    width: 200px;
-    right: 0;
+}
+.share-menu div{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0px;
+    bottom: 120px;
+    /* left: 0px; */
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 90%;
+}
+
+
+@keyframes share-smooth-appear {
+    from {
+        left: 0px
+      }
+      to {
+        right: 40px
+      }
+    }
+    .share-menu {
+      opacity: 0;
+      animation: smooth-appear .8s ease forwards;
 }
 
 .share-menu a {
-    display: block;
-    text-decoration: none;
-    color: #007bff;
-    padding: 8px 10px;
-    border-radius: 3px;
-    margin: 5px 0;
-    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    background-color: #2e2e2e;
+    margin: .8rem;
+    padding: 12px;
+    font-size: 20px;
+    border-radius: 50%;
+    transition: all ease-in-out .2s;
+    border: 1px solid #000;
 }
 
 .share-menu a:hover {
     background-color: #e9ecef;
     color: #0056b3;
-}
-
-.share-menu button {
-    display: block;
-    width: 100%;
-    background-color: #6c757d;
-    color: white;
-    padding: 8px 10px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    text-align: left;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
+    transition: all ease-in-out .2s;
+    border: 1px solid #000;
 }
 
 .share-menu button:hover {
@@ -1380,7 +1325,6 @@ textarea {
 }
 #faq-submit-btn:hover{
     border: 2px solid var(--theme-color);
-    color: ;
 }
 
 .faq-container {
