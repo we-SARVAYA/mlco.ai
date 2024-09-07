@@ -1188,7 +1188,6 @@ color: #ee5535;
     border-radius: 4px;
     background-color: var(--theme-bg-color);
     border-radius: 10px;
-
 }
 .community-left h1{
     font-size: 40px;
@@ -1859,7 +1858,7 @@ footer .footer{
         font-size: 20px;
     }
     .community-left p{
-        font-size: 16px;
+        font-size: 14px;
         margin: 3px 4px;
     }
     .community-left button{
@@ -1867,6 +1866,9 @@ footer .footer{
         padding: 8px 10px;
         width: 10rem;
         font-size: 12px;
+    }
+    .community-right img{
+        height: 45vw;
     }
 
     /* --------------- */
