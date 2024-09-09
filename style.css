@@ -211,8 +211,8 @@ a{
 
 }
 .hero-left h1{
-    font-size: 4.8vw;
-    line-height: 80px;
+    font-size: 4.5vw;
+    line-height: 86px;
 }
 .hero-left h4{
     width: 22rem;
@@ -244,6 +244,17 @@ a{
 .hero-left button i{
     margin-left: 4px;
     font-size: 1.1rem;
+}
+
+.hero-illustration img{
+    height: 70vh;
+    margin-top: 6rem;
+}
+
+@media(max-width:500px){
+    .hero-illustration img{
+        margin-top: 0rem;
+    }
 }
 
 /* ------ Automatic scrolling divs ------ */
@@ -1539,6 +1550,13 @@ footer .footer{
         color: #FFF;
         z-index: 2;
         position: relative;
+    }
+}
+
+@media(max-width:1290px){
+    .hero-left h1{
+        font-size: 3.8vw;
+        line-height: 86px;
     }
 }
 
