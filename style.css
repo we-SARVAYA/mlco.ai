@@ -208,7 +208,9 @@ a{
     transform: scale(1);
     top: 0;
     width: 100vw;
-
+}
+.hero-left {
+    margin-top: 2.4rem;
 }
 .hero-left h1{
     font-size: 4.5vw;
@@ -676,13 +678,12 @@ color: #ee5535;
     border: 1px solid var(--theme-color);
 }
 .course-enroll-button i{
-    border: 1px solid #434141;
+    border: 1px solid var(--theme-color);
     padding: 4px 6px;
     border-radius: 8px;
     margin-left: 4px;
     font-size: 18px;
 }
-
 .complete-payment{
     width: 100%;
     border: none;
@@ -1129,10 +1130,10 @@ color: #ee5535;
     display: none;
 }
 .mentor-desc h1{
-   font-size: 4vw;
+   font-size: 3vw;
 }
 .mentor-desc p{
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     margin: 14px 0;
     color: #8f8f8f;
 }
@@ -1802,7 +1803,7 @@ footer .footer{
      }
      .mentor-exp{
          flex-direction: row;
-         width: 100%;
+         /* width: 100%; */
      }
      .mentor-exp div h3{
          font-size: 1.6rem;

@@ -33,6 +33,7 @@
 .blog-box .blog-l{
     display: flex;
     flex-direction: row;
+    color: #fff;
 }
 .blog-box .blog-l img{
     height: 2rem;
@@ -42,6 +43,9 @@
 
 .blog-box .blog-m{
     width: 42vw;
+}
+.blog-m h1{
+   color: #fff;
 }
 .blog-box .blog-m h3{
     color: #979797;
@@ -80,6 +84,7 @@
     background-color: #2929299f;
     border-radius: 28px;
     font-size: 14px;
+    color: #fff;
 }
 
 .blog-r i{
@@ -88,6 +93,7 @@
     padding: 4px 10px;
     border-radius: 10px;
     background-color: #29292938;
+    color: #fff;
 }
 
 /* ---------------------------------- */
