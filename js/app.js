@@ -19,8 +19,6 @@ faqs.forEach(elem => {
     });
 });
 
-
-
 let copyText = document.querySelector(".copy-text");
 copyText.querySelector("button").addEventListener("click", function () {
 	let input = copyText.querySelector("input.text");
@@ -31,8 +29,6 @@ copyText.querySelector("button").addEventListener("click", function () {
 	setTimeout(function () {
 		copyText.classList.remove("active");
 	}, 500);
-
-    
 });
 
 let copyText2 = document.querySelector(".copy-text-2");

@@ -256,6 +256,7 @@ a{
 @media(max-width:500px){
     .hero-illustration img{
         margin-top: 0rem;
+        height: 90%;
     }
 }
 
@@ -1561,7 +1562,7 @@ footer .footer{
     }
 }
 
-@media(max-width:600px){
+@media(max-width:900px){
     .ag-courses_box div:nth-child(4){
         display: none;
     }
@@ -1806,11 +1807,12 @@ footer .footer{
          /* width: 100%; */
      }
      .mentor-exp div h3{
-         font-size: 1.6rem;
+         font-size: 1.4rem;
          margin-bottom: 12px;
      }
      .mentor-exp div p{
          color: #8c8c8c;
+         font-size: 16px;
      }
      .mentor-exp div:nth-child(2){
          border-top: none;
@@ -1818,6 +1820,9 @@ footer .footer{
      }
      .mentor-exp div:nth-child(2) {
         padding: 12px 0;
+    }
+    .mentor-exp div{
+        width: 22vw;
     }
      
     /* --------------- */
