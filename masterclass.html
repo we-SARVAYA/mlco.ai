@@ -387,6 +387,156 @@
 <script>
     AOS.init();
 </script>
-<script src="./js/app.js"></script>
+<script>
+    // --------------------
+    const shareLink = 'https://www.mlco.ai'; // Replace with your specific link
+    const shareLink2 = 'https://www.mlco.ai'; // Replace with your specific link
+    // --------------------
+    function toggleShareMenu() {
+        const menu = document.getElementById('shareMenu');
+        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
+    function toggleShareMenu2() {
+        const menu2 = document.getElementById('shareMenu2');
+        menu2.style.display = menu2.style.display === 'block' ? 'none' : 'block';
+    }
+    function toggleShareMenu3() {
+        const menu3 = document.getElementById('shareMenu3');
+        menu3.style.display = menu3.style.display === 'block' ? 'none' : 'block';
+    }
+    function toggleShareMenu4() {
+        const menu4 = document.getElementById('shareMenu4');
+        menu4.style.display = menu4.style.display === 'block' ? 'none' : 'block';
+    }
+    // --------------------
+    function share(platform) {
+        let url = '';
+        switch(platform) {
+            case 'facebook':
+                url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareLink)}`;
+                break;
+            case 'twitter':
+                url = `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareLink)}`;
+                break;
+            case 'linkedin':
+                url = `https://www.linkedin.com/shareArticle?url=${encodeURIComponent(shareLink)}`;
+                break;
+            case 'whatsapp':
+                url = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareLink)}`;
+                break;
+            default:
+                return;
+        }
+        window.open(url, '_blank');
+        toggleShareMenu();
+    }
+    // --------------------
+    function share(platform) {
+        let url = '';
+        switch(platform) {
+            case 'facebook':
+                url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareLink)}`;
+                break;
+            case 'twitter':
+                url = `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareLink)}`;
+                break;
+            case 'linkedin':
+                url = `https://www.linkedin.com/shareArticle?url=${encodeURIComponent(shareLink)}`;
+                break;
+            case 'whatsapp':
+                url = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareLink)}`;
+                break;
+            default:
+                return;
+        }
+        window.open(url, '_blank');
+        toggleShareMenu2();
+    }
+    // --------------------
+    function share(platform) {
+        let url = '';
+        switch(platform) {
+            case 'facebook':
+                url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareLink)}`;
+                break;
+            case 'twitter':
+                url = `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareLink)}`;
+                break;
+            case 'linkedin':
+                url = `https://www.linkedin.com/shareArticle?url=${encodeURIComponent(shareLink)}`;
+                break;
+            case 'whatsapp':
+                url = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareLink)}`;
+                break;
+            default:
+                return;
+        }
+        window.open(url, '_blank');
+        toggleShareMenu3();
+    }
+    // --------------------
+    // --------------------
+    function share(platform) {
+        let url = '';
+        switch(platform) {
+            case 'facebook':
+                url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareLink)}`;
+                break;
+            case 'twitter':
+                url = `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareLink)}`;
+                break;
+            case 'linkedin':
+                url = `https://www.linkedin.com/shareArticle?url=${encodeURIComponent(shareLink)}`;
+                break;
+            case 'whatsapp':
+                url = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareLink)}`;
+                break;
+            default:
+                return;
+        }
+        window.open(url, '_blank');
+        toggleShareMenu4();
+    }
+    // --------------------
 
+    function copyLink() {
+        const textarea = document.createElement('textarea');
+        textarea.value = shareLink;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        alert('Link copied to clipboard!');
+        toggleShareMenu();
+    }
+
+    // Close the share menu if clicked outside
+    document.addEventListener('click', function(event) {
+        const menu = document.getElementById('shareMenu');
+        if (!event.target.closest('.share-btn') && !event.target.closest('.share-menu')) {
+            menu.style.display = 'none';
+        }
+    });
+
+    document.addEventListener('click', function(event) {
+        const menu2 = document.getElementById('shareMenu2');
+        if (!event.target.closest('.share-btn') && !event.target.closest('.share-menu')) {
+            menu2.style.display = 'none';
+        }
+    });
+
+    document.addEventListener('click', function(event) {
+        const menu3 = document.getElementById('shareMenu3');
+        if (!event.target.closest('.share-btn') && !event.target.closest('.share-menu')) {
+            menu3.style.display = 'none';
+        }
+    });
+
+    document.addEventListener('click', function(event) {
+        const menu4 = document.getElementById('shareMenu4');
+        if (!event.target.closest('.share-btn') && !event.target.closest('.share-menu')) {
+            menu4.style.display = 'none';
+        }
+    });
+</script>
 </html>
